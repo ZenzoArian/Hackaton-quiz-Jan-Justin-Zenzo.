@@ -1,0 +1,100 @@
+
+/*uiterlijk van de button*/
+.button {
+    background-color: #3356E7;
+    border: none;
+    border-radius: 30px 30px 30px 30px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 32px;
+    cursor: pointer;
+}
+
+/*uiterlijk van de div uitleg*/
+.uitleg {
+  border: 10px solid white;
+  background: gray;
+  height: 13em;
+  width: 24em;
+  border-radius: 30px 30px 30px 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+  margin-left: auto;
+  z-index: 100;
+  position: absolute;
+  font-family: arial;
+}
+
+/*uiterlijk en positie thePlanet text*/
+#thePlanet {
+  color: white;
+  font-family: arial;
+  text-align: center;
+
+}
+
+/*uiterlijk van de body*/
+body {
+  box-sizing: border-box;
+  background-image: url("image/la.png");
+  background-position: 40% 0%;
+}
+
+/*positie van de plaatjes waar je op klikt*/
+.column {
+  float: left;
+  padding: 5px;
+  margin: 10px;
+}
+
+/*positionering van de div row*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*zelfde als row*/
+#anwser {
+  display: block;
+  margin-left: 34%;
+  margin-right: auto;
+  width: 33%;
+}
+
+/*positie van de plaatjes van de planeet*/
+#earth {
+  display: block;
+  margin-left: 36%;
+  margin-right: auto;
+}
+
+/*uiterlijk van de h1*/
+h1 {
+  font-family: calibri;
+  color: white;
+  font-family: arial;
+  text-align: center;
+}
+
+/*als je met je muis er overheen houdt dat het plaatje beetje inzoomed en beweegt*/
+#pic1:hover {
+  transition-duration: 1s;
+  transform: scale(1.1) rotateZ(-5deg);
+}
+
+/*als je met je muis er overheen houdt dat het plaatje beetje inzoomed en beweegt*/
+#pic2:hover {
+  transition-duration: 1s;
+  transform: scale(1.1) rotateZ(5deg);
+}
+
+/*positie text en text kleur in p, ol, li*/
+p, ol, li {
+  text-align: left;
+  color: white;
+}

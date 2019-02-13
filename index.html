@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jan van der Henst, Justin van der Lans, Zenzo Xafir Arian">
+  <link rel="stylesheet" href="css.css">
+  <link rel="shortcut icon" type="image/png" href="image/6.png">
+
+  <title>Hackaton quiz</title>
+</head>
+
+<body>
+  <h1>Welke is beter voor het milieu?</h1>
+  <h3 id="thePlanet" class="planet">Hoe milieuvriendelijk is jouw planeet?</h3>
+  <br>
+  <br>
+  <div class="uitleg" id="uitleg">
+    <p>Uitleg:<br></p>
+      <ol>
+        <li>Klik op het plaatje dat beter is voor het milieu.</li>
+        <li>probeer zo hoog mogelijk % te halen.</li>
+      </ol>
+    <br>
+    <br>
+    <input class="button" type="button" value="Again!" onclick="document.location.reload(true)">
+    <input class="button" type="button" value="Start!" onclick="start()">
+  </div>
+
+  <div class="row" id="anwser">
+    <div class="column" id="pic1">
+      <img src="image/3.png" id="a1" width="200" class="center" alt="Rookierook" />
+    </div>
+    <div class="column" id="pic2">
+      <img src="image/10.png" id="a2" width="200" alt="NONrookierook" />
+    </div>
+  </div>
+  <script src="java.js"></script>
+  <img id="earth" src="image/1.png" alt="no" width="400">
+</body>
+
+</html>
